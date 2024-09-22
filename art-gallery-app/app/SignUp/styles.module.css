@@ -1,0 +1,95 @@
+.signupContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.signupForm, .benefitsSection {
+    flex: 1; /* Each section takes up equal space */
+    max-width: 50%; /* Ensure they don't exceed 50% of the container's width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.signupForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20em;
+    margin-left:5em;
+}
+
+.signupLogo{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.benefitsSection{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 10em;
+    margin-right: 0em;
+}
+
+.benefit1, .benefit2, .benefit3{
+    display: flex;
+    align-items: center;
+}
+.benefit1 img, .benefit2 img, .benefit3 img {
+    width: 20%;
+    min-width: 50px; /* Ensure the image doesn't get smaller than this */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.formitems{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.privacyPolicy{
+    display: flex;
+}
+
+.privacyPolicy p{
+    margin-left: 0.5rem;
+}
+
+.userActions{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.submitButton{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+
+
+@media (max-width:960px){
+    .signupContainer {
+        flex-direction: column; /* Change to row layout for larger screens */
+    }
+
+    .signupForm, .benefitsSection {
+        margin: 0;
+    }
+
+    .benefitsSection{
+        font-size: 1.25rem;
+        white-space: nowrap;
+    }
+
+    .signupForm{
+        margin-bottom: 6rem;
+    }
+}

@@ -1,0 +1,392 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Oswald&display=swap');
+
+
+
+/* Header Section CSS */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.navbarLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.logoImage{
+  width: 6.25em;
+}
+
+.navtitleDesign{
+  color: #17b2ff;
+}
+.navbarLinks, .navbarLinks2 {
+  display: flex;
+  flex: 1;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.navbarLinks{
+  margin-left: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarLinks2{
+  margin-right: 10em;
+  padding-right: 2em;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarLinks a:hover, .navbarLinks2 a:hover{
+  color: brown;
+  cursor: pointer;
+}
+
+.navbarLinks2 a:nth-child(3) button {
+  background-color: #17b2ff;
+  padding: 0.5em;
+}
+
+.navbarLinks2 a:nth-child(3) button:hover{
+  background-color: #1e3a8a;
+}
+
+.navdropdownBtn{
+  display: none;
+}
+
+@media (max-width:960px){
+  .navbarLogo{
+    justify-content: flex-start;
+    margin-right: 3em;
+    
+  }
+  .logoImage{
+    width: 6.25em;
+  }
+  .navbarLinks{
+    justify-content: flex-start;
+    margin-left: 4em;
+  }
+  .navtitle{
+    white-space: nowrap;
+  }
+  .navbarLinks > a:nth-child(2){
+    display: none;
+  }
+  .navbarLinks > a:nth-child(3){
+    display: none;
+  }
+  .navbarLinks2{
+    display: none;
+  }
+  .navdropdownBtn{
+    display: block;
+    font-size: 1.5rem;
+    position: relative;
+    right:1em
+  }
+  .navdropdownBtn:hover{
+    cursor: pointer;
+  }
+  .dropdownmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right:1em;
+  }
+
+  .dropdownmenu a:hover{
+    color: brown !important;
+    cursor: pointer !important;
+  }
+}
+
+/*Hero Section CSS*/
+.blur {
+  filter: blur(1px);
+  transition: filter 0.3s ease;
+}
+
+.heroTop{
+  display: flex;
+}
+.heroInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 10% 0;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.heroImage{
+  width: 35%;
+}
+.heroInfo h1{
+  font-weight: 200;
+}
+
+.heroCatch{
+  font-family: "Nanum Pen Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.heroInfo p{
+  text-align: center;
+}
+
+
+.userActions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButton{
+  margin-right: 5em;
+  margin-top: 1em;
+  color: white;
+  background-color: #17b2ff;;
+}
+
+.signupButton{
+  margin-left: 5em;
+  margin-top: 1em;
+  color: white;
+  background-color: #17b2ff;;
+}
+
+@media (max-width:960px){
+  .heroInfo{
+    justify-content: center;
+    white-space: wrap;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0;
+    position: relative;
+  }
+  .heroImage{
+    width: 55%;
+    position: absolute;
+    opacity: 0.3;
+  }
+
+  .heroCatch{
+    font-size: 1.5rem;
+    word-wrap: break-word;
+  }
+
+  .heroInfo p{
+    word-wrap: break-word;
+  }
+  .userActions{
+    justify-content: center;
+    align-items: center;
+    margin-top:4.5rem;
+  }
+
+  .loginButton{
+    margin: 1em 1em 0 0 ;
+  }
+
+  .signupButton{
+    margin: 1em 0 0 1em;
+  }
+
+}
+
+
+/*Top Selling Section*/
+
+.TopSelling{
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.TopSellingHeading{
+  font-size: 3.5rem;
+  text-align: center;
+  color: #17b2ff;
+  font-family: "Nanum Pen Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.selectionMenu{
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.selectionMenu a {
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
+}
+
+.selectionMenu a:hover{
+  color: #17b2ff;
+}
+
+.TopSellingContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly; 
+  margin-top: 1rem;
+}
+
+.artworkBox {
+  display: flex;
+  flex-direction: column; /* Ensures the content inside the box is stacked vertically */
+  align-items: center; /* Centers the content horizontally */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.artworksImage {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  margin-bottom: 1rem;
+}
+
+@media (max-width:960px){
+  .TopSelling{
+    margin-top: 3em;
+  }
+
+  .selectionMenu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .TopSellingContainer{
+    flex-wrap: wrap;
+  }
+}
+
+/*Testimonials*/
+
+.TestimonailsHeading{
+  font-size: 3.5rem;
+  text-align: center;
+  color: #17b2ff;
+  font-family: "Nanum Pen Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.TestimonialsContainer{
+  display: flex;
+}
+.reviewBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Add a background color */
+  padding: 20px; /* Add some padding */
+  position: relative;
+}
+.reviewBox img {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.reviewBox p:first-child {
+  font-weight: bold;
+}
+.reviewuserInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:960px){
+  .TestimonialsContainer{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+/*Footer*/
+.footer{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  background-color: #17b2ff;;
+}
+.footerLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footerLinks{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLinks a {
+  display: inline-block; /* or block */
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+.footerLinks a:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+.footertitleDesign{
+  color: white;
+}
+
+@media (max-width:960px){
+  .footer{
+    flex-direction: column;
+  }
+  .footerLinks{
+    margin-left: 2rem;
+  }
+}

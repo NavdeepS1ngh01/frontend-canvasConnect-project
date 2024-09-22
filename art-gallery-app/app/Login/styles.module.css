@@ -1,0 +1,85 @@
+
+
+
+.LoginLogo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.LoginContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.LoginComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+
+.LoginComponent {
+    flex: 1 1 70%; /* Takes up 60% of the space */
+}
+
+.loginImage {
+    flex: 1 1 30%; /* Takes up 40% of the space */
+    max-width: 100%; /* Ensures the image doesn't overflow */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.loginForm{
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+.Formitems{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formremember{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.formremember .forgotPassword {
+  margin-left: auto;
+}
+
+.userActions{
+display: flex;
+gap: 0.5rem;
+}
+
+.submitButton{
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+
+@media (max-width:960px){
+    .loginImage{
+        display: none;
+    }
+
+    .LoginContainer{
+        flex-direction: column;
+    }
+
+    .LoginComponent{
+        margin: 0;
+    }
+
+}
